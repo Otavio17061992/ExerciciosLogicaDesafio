@@ -1,0 +1,15 @@
+/workspaces/ExerciciosLogicaDesafio/ExerciciosBegginer/bin/Debug/net8.0/ExerciciosBegginer
+/workspaces/ExerciciosLogicaDesafio/ExerciciosBegginer/bin/Debug/net8.0/ExerciciosBegginer.deps.json
+/workspaces/ExerciciosLogicaDesafio/ExerciciosBegginer/bin/Debug/net8.0/ExerciciosBegginer.runtimeconfig.json
+/workspaces/ExerciciosLogicaDesafio/ExerciciosBegginer/bin/Debug/net8.0/ExerciciosBegginer.dll
+/workspaces/ExerciciosLogicaDesafio/ExerciciosBegginer/bin/Debug/net8.0/ExerciciosBegginer.pdb
+/workspaces/ExerciciosLogicaDesafio/ExerciciosBegginer/obj/Debug/net8.0/ExerciciosBegginer.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/ExerciciosLogicaDesafio/ExerciciosBegginer/obj/Debug/net8.0/ExerciciosBegginer.AssemblyInfoInputs.cache
+/workspaces/ExerciciosLogicaDesafio/ExerciciosBegginer/obj/Debug/net8.0/ExerciciosBegginer.AssemblyInfo.cs
+/workspaces/ExerciciosLogicaDesafio/ExerciciosBegginer/obj/Debug/net8.0/ExerciciosBegginer.csproj.CoreCompileInputs.cache
+/workspaces/ExerciciosLogicaDesafio/ExerciciosBegginer/obj/Debug/net8.0/ExerciciosBegginer.sourcelink.json
+/workspaces/ExerciciosLogicaDesafio/ExerciciosBegginer/obj/Debug/net8.0/ExerciciosBegginer.dll
+/workspaces/ExerciciosLogicaDesafio/ExerciciosBegginer/obj/Debug/net8.0/refint/ExerciciosBegginer.dll
+/workspaces/ExerciciosLogicaDesafio/ExerciciosBegginer/obj/Debug/net8.0/ExerciciosBegginer.pdb
+/workspaces/ExerciciosLogicaDesafio/ExerciciosBegginer/obj/Debug/net8.0/ExerciciosBegginer.genruntimeconfig.cache
+/workspaces/ExerciciosLogicaDesafio/ExerciciosBegginer/obj/Debug/net8.0/ref/ExerciciosBegginer.dll
