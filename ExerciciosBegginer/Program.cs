@@ -47,6 +47,32 @@ namespace ExerciciosBegginer
             int pares = NumerosPares([1,2,3,4,5,6]);
             Console.WriteLine($"Quantidade de pares: {pares}");
 
+            // ### 5. Inverta uma string
+
+            // **Descrição:**
+
+            // Dada uma string, retorne ela invertida.
+
+            // **Entrada:**
+            //"programar"
+
+            //Saída esperada:
+            //"ramargorp"
+
+            string palavra = "programar";
+            Console.WriteLine(PalavraReversa(palavra));
+
+            //### 6. Verifique se uma palavra é um palíndromo
+            // **Descrição:**
+            // Um palíndromo é uma palavra que se lê igual de frente pra trás e de trás pra frente.
+            //  Verifique se uma string é um palíndromo.
+            // **Entrada:**
+            //"radar"
+            //Saida Esperada:
+            // É palindromo
+
+            string palavra3 = "radar";
+            Console.WriteLine(EhPalindromo(palavra3));
         }
 
         public static int[] MaiorMenor(List<int> numeros)
@@ -103,6 +129,48 @@ namespace ExerciciosBegginer
             }
 
             return totalPares;
+        }
+        public static string PalavraReversa(string palavra)
+        {
+            string palavraReversa = "";
+
+
+            for(int i = palavra.Count() -1; i >= 0; i--)
+            {
+                palavraReversa += palavra[i];
+            }
+
+            return palavraReversa;
+        }
+
+        public static string EhPalindromo(string palavra)
+        {
+            string palavraAlcontrario = "";
+            bool EhPalindromo = true;
+            int j = 0;
+
+            for(int i =palavra.Count()-1; i >= 0; i--)
+            {
+                palavraAlcontrario += palavra[i];
+
+                if(palavra[i] != palavraAlcontrario[j])
+                {
+                    EhPalindromo = false;
+                    break;
+                }
+
+                j++;
+            }
+
+            if(EhPalindromo == true)
+            {
+                return "É palindromo";
+            }
+            else
+            {
+                return "não é palindromo";
+            }
+
         }
     }
 }
