@@ -73,6 +73,57 @@ namespace ExerciciosBegginer
 
             string palavra3 = "radar";
             Console.WriteLine(EhPalindromo(palavra3));
+
+            //### 7. Conte quantas vogais existem em uma palavra
+            //**Descrição:**
+            // Dada uma string, conte quantas vogais existem nela (a, e, i, o, u).
+            //**Entrada:**
+            //"javascript"
+            //**Saida:**
+            // Número de vogais: 3
+
+            int vogais = Vogais("javascript");
+            Console.WriteLine($"Número de vogais: {vogais} ");
+
+            //### 8. Some todos os números de 1 até N
+            //**Descrição:**
+            //Receba um número `N` e retorne a soma de todos os números de 1 até `N`.
+            //**Entrada:**
+            // 5
+            // Nesse caso: 1+2+3+4+5
+            //**Saída esperada:**
+            // Soma: 15
+
+            int soma = Soma(5);
+            Console.WriteLine($"Soma: {soma}");
+
+            //### 9. Retorne apenas os números positivos de uma lista
+
+            //**Descrição:**
+
+            //Dada uma lista de números inteiros, retorne uma nova lista apenas com os números positivos.
+
+            //**Entrada:**
+            //[-2, 5, 0, -8, 7]
+
+            List<int> num = new List<int> () {-2, 5, 0, -8, 7};
+
+            var positivos = ListaNumPositivo(num);
+
+            foreach(var n in positivos)
+            {
+                Console.Write($"{n}," );
+            }
+            Console.WriteLine();
+            // ### 10. Converta uma temperatura de Celsius para Fahrenheit
+            //**Descrição:**
+            //Dado um valor em Celsius, converta e retorne o valor equivalente em Fahrenheit.
+            //Fórmula: `F = C × 1.8 + 32`
+            //**Entrada:**
+            // 0
+            // Saída esperada:
+            // 32
+            Console.WriteLine(ConvertCelsToFaren(0));
         }
 
         public static int[] MaiorMenor(List<int> numeros)
@@ -172,5 +223,55 @@ namespace ExerciciosBegginer
             }
 
         }
+
+        public static int Vogais(string palavra)
+        {
+            List<char> vogais = new List<char>(){'a', 'e', 'i', 'o', 'u'};
+            int qtVogais = 0;
+            for(int i = 0; i <= palavra.Length -1; i++)
+            {
+                if (vogais.Contains(palavra[i]))
+                {
+                    qtVogais++;
+                }
+            }
+
+            return qtVogais;
+        }
+
+        public static int Soma(int num)
+        {
+            int max = 1;
+            int total = 0;
+            while(max <= num)
+            {
+                total+= max;
+                max++;
+            }
+
+            return total;
+        }
+
+        public static List<int> ListaNumPositivo(List<int> numeros)
+        {
+            List<int> numerosPositivos = new List<int>();
+            foreach(var num in numeros)
+            {
+                if(num > 0)
+                {
+                    numerosPositivos.Add(num);
+                }
+            }
+
+            return numerosPositivos;
+        }
+
+        public static double ConvertCelsToFaren(int num)
+        {
+            double fahrenheit = (num * 1.8) +32;
+            
+            return fahrenheit; 
+        }
+
     }
 }
