@@ -124,6 +124,18 @@ namespace ExerciciosBegginer
             // Saída esperada:
             // 32
             Console.WriteLine(ConvertCelsToFaren(0));
+
+            //# 🧩 Desafios - Nível Iniciante 2
+            //---
+            //## 1. Verifique se um número é primo
+            //### Enunciado:
+            //Um número primo é aquele que só é divisível por 1 e por ele mesmo.
+            //Receba um número e diga se ele é primo ou não.
+            //### Entrada:
+            // 7
+            //Saída Esperada:
+            // É Primo
+            Console.WriteLine(EhPrimo(3));
         }
 
         public static int[] MaiorMenor(List<int> numeros)
@@ -273,5 +285,18 @@ namespace ExerciciosBegginer
             return fahrenheit; 
         }
 
+        public static string EhPrimo(int num)
+        {
+            for( int i = 1; i <= num; i++)
+            {
+                    if(i == 1 && i % num == 0)
+                    {
+                        if(i == num && i % num == 0)
+                            return "É primo";
+                    }
+            }
+
+            return "não é Primo";
+        }
     }
 }
